@@ -48,10 +48,10 @@ class TodoList extends React.Component {
                     <div className='row'>
                         <div className='col col-lg-10 m-auto'>
                             <ul className='list-group'>
-                            <input className='form-control-lg' type='text' placeholder='What needs to be done?' onKeyDown={(e) => this.addNotes(e)}></input>
-                            {this.state.notes.map((item,i)=>{
-                                return <li key={i} className='list-group-item d-flex justify-content-between align-items-center '>{item} <span  onClick={(i)=> this.deleteNotes(i)}><FontAwesomeIcon icon={faTrash} /></span></li>})}
-                            <div className='count list-group-item'>{this.state.count} item left</div>
+                                <input className='form-control-lg' type='text' placeholder='What needs to be done?' onKeyDown={(e) => this.addNotes(e)}></input>
+                                {this.state.notes.map((item,i)=>{
+                                    return <li key={i} className='list-group-item d-flex justify-content-between align-items-center '>{item} <span  onClick={(i)=> this.deleteNotes(i)}><FontAwesomeIcon icon={faTrash} /></span></li>})}
+                                <div className='count list-group-item'>{this.state.count} item left</div>
                             </ul>
                         </div>
                     </div> 
